@@ -1,0 +1,47 @@
+<div class="monochrome-page">
+  <!-- Navegación Superior Editorial -->
+  <header class="top-nav">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="brand-id">IO</span>
+        <span class="brand-divider">/</span>
+        <span class="brand-sub">Gestión Operativa</span>
+      </div>
+
+      <div class="nav-actions">
+        <button class="btn-ghost" (click)="goToLogin()">
+          {{ authService.isAuthenticated() ? 'Ir al Sistema' : 'Ingresar al sistema' }}
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenedor Central Luminoso -->
+  <main class="hero-stage">
+    <div class="stage-container">
+      <div class="hero-card">
+        <h1 class="hero-title">Software de Gestión Operativa</h1>
+        <p class="hero-description">
+          Supervisión, administración y control de equipos para la industria corporativa.
+        </p>
+
+        <div class="cta-group">
+          <button class="btn-solid" (click)="goToLogin()">
+            <span>Ingresar al sistema</span>
+            <svg viewBox="0 0 20 20" fill="currentColor" class="arrow-icon">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página minimalista -->
+  <footer class="bottom-footer">
+    <div class="footer-container">
+      <span>Sistema IO</span>
+      <span class="footer-copy">&copy; 2026. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+</div>

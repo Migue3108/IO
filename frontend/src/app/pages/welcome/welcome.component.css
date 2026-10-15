@@ -1,0 +1,130 @@
+.welcome-viewport {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+}
+
+/* Header */
+.top-nav {
+  background-color: var(--mono-white);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 1.25rem 3rem;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.brand-id {
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.04em;
+  color: var(--mono-black);
+}
+
+.brand-divider {
+  color: var(--mono-gray-300);
+  font-weight: 300;
+}
+
+.brand-sub {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: -0.01em;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--mono-black);
+  border: 1px solid var(--mono-black);
+  padding: 0.55rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-ghost:hover {
+  background-color: var(--mono-black);
+  color: var(--mono-white);
+}
+
+/* Welcome Stage (Centro más claro: #FFFFFF) */
+.welcome-stage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4.5rem 2rem;
+}
+
+.stage-container {
+  width: 100%;
+  max-width: 820px;
+}
+
+.welcome-card {
+  background-color: var(--bg-center);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 5rem 4rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.02);
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  color: var(--mono-black);
+  margin-bottom: 1rem;
+}
+
+.welcome-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Footer */
+.bottom-footer {
+  background-color: var(--mono-white);
+  border-top: 1px solid var(--border-subtle);
+  padding: 1.5rem 3rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copy {
+  color: var(--mono-gray-500);
+}
+
+@media (max-width: 768px) {
+  .top-nav { padding: 1rem 1.5rem; }
+  .welcome-card { padding: 3rem 1.75rem; }
+  .welcome-title { font-size: 2.25rem; }
+  .bottom-footer { padding: 1.25rem 1.5rem; }
+  .footer-container { flex-direction: column; gap: 0.5rem; text-align: center; }
+}
